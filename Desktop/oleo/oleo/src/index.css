@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@400;600&family=Open+Sans:wght@400;700&family=Roboto+Slab:wght@300&family=Tinos&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@400;600&family=Open+Sans&family=Roboto+Slab:wght@300&family=Tinos&display=swap'); 
+
+
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat', 'sans-serif' ;
+    margin: 0;
+
+}
+
+

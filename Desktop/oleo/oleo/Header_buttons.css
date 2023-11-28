@@ -1,0 +1,41 @@
+
+
+.header-button{
+    display: inline-block;
+    color: rgb(254, 254, 254);
+    font-size: 29px;
+    font-weight: lighter;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    margin-right: 43px;
+    transition: color 0.3s ease;
+    position: relative;
+    z-index: 2;
+    background-color: transparent; 
+    border: none;
+
+}
+.header-button::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #FFDC33; 
+    position: absolute;
+    bottom: 0;
+    transform: scaleX(0); 
+    transform-origin: bottom right;
+    transition: transform 0.5s ease; 
+    
+
+}
+.header-button:hover::after {
+    transform: scaleX(1); 
+    
+}
+
+.header-button:hover {
+    color: #FFDC33;
+    text-decoration: none;
+}
+
