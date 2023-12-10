@@ -1,0 +1,88 @@
+.logotip {
+    width: 313px;
+    height: auto;
+}
+.ending {
+    margin-left: 110px;
+   
+}
+.title-of-end {
+    font-size: 40px;
+    margin-top: 60px;
+}
+.title-of-end::after {
+    content:'';
+    background-color: #FFDC33;
+    width: 126px;
+    height: 3px;
+    display: block;
+    position: relative;
+    margin-top: 38px;
+    transition: width 0.5s ease-in-out;;
+
+}
+.title-of-end:hover:after {
+    content:'';
+    width: 580px;
+}
+.title-of-contacts {
+    font-size: 32px;
+    font-weight: bold;
+}
+.number-of-phone {
+    font-size: 26px;
+    margin-left: 20px;
+    transition: color 0.5s ease;
+}
+.number-of-phone:hover {
+    color:#FFDC33;
+}
+.number {
+    display: flex;
+    align-items:center;
+    margin-top: 50px;
+}
+.email-of-ender {
+    font-size: 26px;
+    margin-left: 20px;
+    transition: color 0.5s ease;
+}
+.email-of-ender:hover {
+    color:#FFDC33;
+}
+.email {
+    display: flex;
+    align-items:center;
+    margin-top: 30px;
+}
+.alatoo-loc {
+    font-size: 26px;
+    margin-left: 20px;
+    transition: color 0.5s ease;
+}
+.alatoo-loc:hover {
+    color:#FFDC33;
+}
+.locat {
+    display: flex;
+    align-items:center;
+    margin-top: 20px;
+    position: relative;
+    margin-right: 20px;
+}
+.contacts {
+   margin-left: 950px;
+   margin-top: -370px;
+}
+
+.subt {
+    font-size: 15px;
+    font-weight: lighter;
+    margin-top: 100px;
+    position: relative;
+    top:-25px;
+    
+}
+.footer {
+    margin-top: 10em;
+}
