@@ -64,7 +64,6 @@ function scrollToTop() {
       <div className="menutext">
       <a href="#" onClick={scrollToTop} className='header-button'>Home</a>
 
-{/* <button  id="scrollToTop" onClick={scrollToTop} className='header-button'>Home</button> */}
 <a href="" className='header-button'>Cook</a>
 <a href="" className='header-button'>Categories</a>
 <a href="" className='header-button'>About us</a>

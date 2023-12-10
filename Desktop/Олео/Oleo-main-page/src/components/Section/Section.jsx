@@ -206,10 +206,6 @@ window.addEventListener('scroll', () => {
                             </div>
                         </div>
                     </div>
-                    {/* <div className="bg-of-comments">
-                        <img src="./pages/фото/Frame 9.png" alt="" className='width' />
-                    </div> */}
-                    {/* <img src="./pages/фото/image 28.png" alt="" className='lemon' /> */}
 
                 </div>
                 </div>
