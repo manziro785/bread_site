@@ -217,12 +217,18 @@ body {
     .mini-photo {
         display: none;
     }
+    .header {
+        z-index: 1000000000;
+    }
     
 
 }
 @media (min-width:1000px) {
     .menu,  .menu-photo, .menutext  {
         display: none;
+    }
+    .header {
+        z-index: 100000000;
     }
    
 }

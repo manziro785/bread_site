@@ -733,5 +733,16 @@ body {
    .cards {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background-position-y:top;
    }
+   .card1, .card2, .card3 {
+    margin-top: 20px;
+   }
+   .card1 {
+    margin-top: 60px;
+   }
+
+   
 }
