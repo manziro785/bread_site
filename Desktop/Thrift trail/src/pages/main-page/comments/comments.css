@@ -1,0 +1,91 @@
+.title00 {
+    font-size: 84px;
+    font-family: 'Inter', sans-serif;
+    color: #ffff;
+    display: flex;
+    flex-direction: row;
+}
+.title00::before {
+    content: '';
+    display: block;
+    background-color:#045C24;
+    width: 114px;
+    height: 7px;
+    margin-top: 50px;
+    margin-right: 10px;
+}
+.subt00 {
+    font-size: 52px;
+    font-family: 'Inter', sans-serif;
+    color: #045C24;
+    margin-left: 120px;
+
+}
+.comments {
+    margin-top: 300px;
+}
+.zagol-about {
+    margin-left: 40px
+}
+.zagol-ab {
+    display: flex;
+    flex-direction: row;
+}
+.bg-of-about {
+    position: absolute;
+    right: 0;
+}
+.title-mission, .title-values {
+    font-size: 56px;
+    font-family: 'Inter', sans-serif;
+    margin-left: 64px;
+    color:#ffff;
+    font-weight: bold;
+    background:none;
+
+}
+.dollar-about-us {
+    background: none !important;
+}
+.info-mission, .info-values {
+    font-size: 30px;
+    color: #B8B8B8;
+    margin-left: 140px;
+
+}
+.info-mission {
+    width: 843px;
+    background:none;
+    margin-top: 137px;
+    
+
+}
+.info-values  {
+    width: 800px;
+    background:none;
+    margin-top: 135px;
+    
+
+}
+.mission, .values {
+    width: 100%;
+    height: 475px;
+    display: flex;
+    flex-direction: row;
+    background:none;
+}
+.mission {
+    background-image: url('./src/assets/photo/bg comments.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 150px;
+}
+.title-mission , .title-values{
+    margin-top: 118px;
+}
+.values {
+    background-color:#024019;
+}
+.title-values {
+    margin-right: 20px;
+}
