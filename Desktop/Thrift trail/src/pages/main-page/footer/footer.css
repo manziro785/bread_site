@@ -1,0 +1,73 @@
+.motiv {
+    font-size: 47px;
+    color: #ffff;
+    margin-top: 55px;
+
+}
+.line {
+    height: 4px;
+    width: 223px;
+    background-color: #045C24;
+    transition: width 0.5s ease ;
+    margin-top: 55px ;
+    margin-bottom: 115px;
+    z-index: 11;
+    position: relative;
+}
+.line:hover {
+    width: 570px;
+}
+.comp {
+    font-size: 15;
+    color: #ffff;
+    font-weight:lighter;
+}
+.title-contactus {
+    font-weight: bold;
+    color:#ffff;
+    font-size: 47px;
+    margin-left: 20px;
+
+}
+
+.numb, .ema , .pla {
+    font-size: 26px;
+    color:#ffff;
+    cursor: pointer;
+    transition: color 0.5s ease;
+
+}
+.numb:hover , .ema:hover  , .pla:hover {
+    color:#045C24;
+}
+
+.number , .email, .place {
+    display: flex;
+    flex-direction: row;
+    margin-bottom:45px ;
+}
+.pla {
+    margin-top: 10px;
+    margin-left: 8px;
+
+}
+.number {
+    margin-top: 58px;
+}
+.ema {
+    margin-left: 19px;
+} 
+.numb {
+    margin-left: 15px;
+}
+.footer {
+    display: flex;
+    flex-direction: row;
+    padding-left: 68px;
+    margin-top: 350px;
+}
+.contacts {
+    position: absolute;
+    right: 100px;
+    margin-top: 47px;
+}

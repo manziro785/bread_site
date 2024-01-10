@@ -4,7 +4,7 @@ import './about-us.css'
 export default function AboutUs() {
     return (
         <>
-            <div className="about-us">
+            <div className="about-us" id='comments'>
                 <div className="zagol-a">
                     <div className="title-a">
                         Comments
@@ -14,7 +14,7 @@ export default function AboutUs() {
                     </div>
                 </div>
 
-                <div className="commen">
+                <div className="commen" >
                     <div className="comment1">
                         <div className="komment1">
                             <img src="./src/assets/photo/comment (1).svg" alt="" className='photo-komment' />

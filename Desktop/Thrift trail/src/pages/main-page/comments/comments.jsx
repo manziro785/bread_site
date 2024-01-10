@@ -6,8 +6,8 @@ export default function Comments() {
     <>
     <div className="comments">
         <div className="zagol-ab">
-        <div className="zagol-about">
-            <div className="title00">
+        <div className="zagol-about" >
+            <div className="title00"id='about'>
                 About us
             </div>
             <div className="subt00">
