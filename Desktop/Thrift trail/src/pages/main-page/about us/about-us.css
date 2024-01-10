@@ -1,0 +1,104 @@
+.text1 {
+    font-size: 29px;
+    color: #656161;
+    font-family: 'Inter' ,sans-serif;
+    width: 328px;
+    margin-top: -350px;
+    margin-left: 40px;
+    z-index: 3;
+
+}
+
+.photo-komment {
+   z-index: 2;
+   background:none !important;
+}
+.elon, .tate {
+    background: none;
+    width: fit-content;
+}
+.logo-comment1, .logo-comment2 {
+    margin-top: 130px;
+    display: flex;
+    flex-direction: row;
+}
+.logo-comment2 {
+    margin-top: 95px;
+}
+.firstname {
+    font-size: 44px;
+    color: #045C24;
+    font-family: 'Inter', sans-serif;
+}
+.nickname {
+    font-size: 25px;
+    color: #7D7D7D;
+    font-family: 'Inter', sans-serif;
+
+}
+.name1{
+    margin-left: 31px;
+    margin-top: 5px;
+}
+.commen {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    z-index: 3;
+    position: relative;
+}
+.comment1 {
+    margin-left: 50px;
+    z-index: 3;
+    position: relative;
+}
+.comment3 {
+    margin-right: 50px;
+}
+.title-a {
+    font-size: 84px;
+    font-family: 'Inter', sans-serif;
+    color: #ffff;
+    display: flex;
+    flex-direction: row;
+}
+.title-a::before {
+    content: '';
+    display: block;
+    background-color:#045C24;
+    width: 114px;
+    height: 7px;
+    margin-top: 50px;
+    margin-right: 10px;
+}
+.subt-a {
+    font-size: 52px;
+    font-family: 'Inter', sans-serif;
+    color: #045C24;
+    margin-left: 120px;
+
+}
+.zagol-a {
+    margin-left: 40px;
+    margin-top: 230px;
+    margin-bottom: 140px;
+    width: fit-content;
+}
+
+.bg-comm {
+    position: absolute;
+    left: -120px;
+    top: -32em;
+    width: 100%;
+    height: 100%;
+    background:none;
+    z-index: 1;
+
+}
+.bg-of-commentss {
+    background:none;
+    z-index: 1;
+}
+.komment1, .comment1 {
+    background:none !important;
+}
