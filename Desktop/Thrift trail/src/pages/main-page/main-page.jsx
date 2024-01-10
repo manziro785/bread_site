@@ -4,6 +4,7 @@ import Header from './header/header.jsx'
 import Banner from './banner/banner.jsx'
 import Cards from './cards/cards.jsx'
 import Comments from './comments/comments.jsx'
+import AboutUs from './about us/about-us'
 
 export default function MainPage() {
   return (
@@ -12,6 +13,7 @@ export default function MainPage() {
      <Banner/>
      <Cards/>
      <Comments/>
+     <AboutUs/>
      </>
     
   )
