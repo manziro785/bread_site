@@ -1,7 +1,8 @@
 import React from 'react'
 import'./sign-up.css'
+import { useNavigate } from 'react-router-dom'
 
-export default function SignUp() {
+export function SignUp() {
   return (
     <>
 

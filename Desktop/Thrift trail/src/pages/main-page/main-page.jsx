@@ -7,7 +7,7 @@ import Comments from './comments/comments.jsx'
 import AboutUs from './about us/about-us'
 import Footer from './footer/footer.jsx'
 
-export default function MainPage() {
+export function MainPage() {
   return (
      <>
      <Header/>
