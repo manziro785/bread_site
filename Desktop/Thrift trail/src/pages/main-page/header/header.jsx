@@ -1,5 +1,6 @@
 import React from 'react'
 import './header.css'
+import { NavLink } from 'react-router-dom';
 
 export default function Header() {
   const scrollToTop = () => {
@@ -56,9 +57,11 @@ export default function Header() {
     <button id="scrollToTop"  className="header-button"  onClick={scrollToTop}>
               Home
             </button>
+            <NavLink to='manage'>
             <button className = "header-button">
               Manage
             </button>
+            </NavLink>
 
             <button className="header-button" onClick={() => scrollToElement(document.getElementById('about'), 1000)}>
               About us
@@ -77,12 +80,16 @@ export default function Header() {
                 </div>
               ) : ( */}
                 <div className="tooltiptext">
-                  <div className="sign-up">
+                 <NavLink to='registration'>
+                  <button className="sign-up">
                     sign up
-                  </div>
-                  <div className="log-in">
+                  </button>
+                  </NavLink>
+                  <NavLink to='login'>
+                  <button className="log-in">
                     log in
-                  </div>
+                  </button>
+                  </NavLink>
                 </div>
           </div>
           </div>

@@ -35,7 +35,7 @@
       width: 100%;
     }
   }
-  
+   
 .button-manage {
     color: #ffff;
     font-size: 40px;
@@ -52,8 +52,10 @@
     background:none;
 }
 .button-man {
-    margin-top: 105px;
+    margin-top: 87px;
     width: fit-content;
+    text-decoration: none;
+
 }
 
 .button-manage:hover {
