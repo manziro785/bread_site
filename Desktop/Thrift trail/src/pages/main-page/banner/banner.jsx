@@ -1,5 +1,6 @@
 import React from 'react'
 import './banner.css'
+import { NavLink } from 'react-router-dom'
 
 export default function Banner() {
   return (
@@ -14,9 +15,11 @@ Shape Your Wealth Path
 Craft Your <span>Success</span>
 </div>
 </div>
+<NavLink to= 'manage'>
 <div className="button-man">
-    <a href="" className='button-manage'>Manage money</a>
+    <button className='button-manage'>Manage money</button>
 </div>
+</NavLink>
     </div>
     <div className="right">
 <div className="hand">

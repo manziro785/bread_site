@@ -1,7 +1,7 @@
 import React from 'react'
 import './check.css'
 
-export default function Check() {
+export function Check() {
   return (
     <> 
 
