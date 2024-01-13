@@ -4,7 +4,7 @@ import './manage.css'
 export default function Manage() {
   return (
     <>
-    
+     
     </>
   )
 }
