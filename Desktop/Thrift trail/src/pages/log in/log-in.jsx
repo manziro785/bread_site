@@ -15,7 +15,7 @@ export  function LogIn() {
       </div>
       <div className="login-all">
       <div className="login-box">
-<div className="title-login">
+<div className="title-login"> 
 LOG IN
 </div>
 <div className="input-login">
