@@ -216,3 +216,20 @@
     color: #059038;
     border: 4px solid #059038;
 }
+
+
+.incomes-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .input-row {
+    display: flex;
+    margin-bottom: 10px;    
+  }
+  
+  .custom-input1, .custom-input2 {
+    margin-right: 10px; 
+  
+  }
