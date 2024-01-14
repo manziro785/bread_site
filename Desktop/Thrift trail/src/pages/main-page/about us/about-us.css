@@ -103,3 +103,96 @@
 .komment1, .comment1 {
     background:none !important;
 }
+
+@media (max-width: 1030px) {
+    .zagol-a {
+        transform: scale(0.6); /* Примерный масштаб, вы можете установить нужное значение */
+        transform-origin: top
+         left;
+          margin-bottom: 20px;
+    }
+    .comment1, .comment2, .comment3 {
+        transform: scale(0.7); /* Примерный масштаб, вы можете установить нужное значение */
+        transform-origin: top
+         center; 
+    }
+    .comment3{
+        transform-origin: top
+        left; 
+        margin-right: 70px;
+    }
+    .comment1 {
+        transform-origin: top
+        right; 
+        margin-left: 70px;
+    }
+    .bg-of-commentss {
+        width: 1200px;
+    }
+    .bg-comm { 
+        position:absolute;
+        top: -22em;
+    }
+}
+
+
+@media (max-width: 780px) {
+.zagol-a {
+    transform: scale(0.5); /* Примерный масштаб, вы можете установить нужное значение */
+      transform-origin: top
+    left; 
+    margin-top: 180px;
+    margin-bottom: 0;
+}
+.comment1, .comment2, .comment3 {
+    transform: scale(0.7); /* Примерный масштаб, вы можете установить нужное значение */
+    transform-origin: top
+     center; 
+      display: inline-block; /* делаем элементы строчно-блочными, чтобы они не переносились */
+  margin-right: 20px; 
+}
+.comment3{
+    transform-origin: top
+    left; 
+    
+}
+.comment1 {
+    transform-origin: top
+    right; 
+    margin-left: 290px;
+    margin-right: 20px; 
+}
+.comment2 {
+    width: fit-content;
+}
+.commen {
+    width: 100%; /* или любая другая ширина, которую вы хотите */
+    overflow-x: auto;
+    height: 370px; /* добавляем горизонтальный скролл */
+}
+.bg-comm {
+    display: none;
+}
+
+}
+@media (max-width: 600px) {
+    .comment1 {
+        transform-origin: top
+        right; 
+        margin-left: 610px;
+         
+    }
+    .zagol-a {
+        transform: scale(0.3); /* Примерный масштаб, вы можете установить нужное значение */
+        transform-origin: center
+         left; 
+         margin-left: 20px;
+         margin-top: 50px;
+    
+    }
+}
+@media (max-width: 380px) {
+    .comment1 {
+        margin-left: 700px;
+    }
+}

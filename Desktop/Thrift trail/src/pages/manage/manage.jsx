@@ -1,6 +1,7 @@
 import React from 'react'
 import './manage.css'
 import { NavLink } from 'react-router-dom'
+import { Autoriz } from '../main-page/autoriz/autoriz.jsx'
 
 export function Manage() {
   return (
@@ -12,28 +13,7 @@ export function Manage() {
           </NavLink>
         </div>
         <div className="login-signup">
-          <div className="custom-tooltip">
-            <img src="../src/assets/photo/image 8person.svg" alt="Mini Photo" className="mini-photo" id="person" />
-            {/* {user ? (
-                <div className="tooltiptext">
-                  <div className="sign-up">
-                    log out
-                  </div>
-                </div>
-              ) : ( */}
-            <div className="tooltiptext">
-              <NavLink to='registration'>
-                <button className="sign-up">
-                  sign up
-                </button>
-              </NavLink>
-              <NavLink to='login'>
-                <button className="log-in">
-                  log in
-                </button>
-              </NavLink>
-            </div>
-          </div>
+         <Autoriz/>
         </div>
       </div>
 

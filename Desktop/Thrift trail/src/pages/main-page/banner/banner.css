@@ -142,3 +142,105 @@
     z-index: 1;
     position: relative;
 }
+
+@media (max-width:1030px) {
+    .subt {
+        font-size: 25px;
+    }
+    .title {
+        font-size: 60px;
+    }
+    .button-manage {
+        margin-left: 20px;
+        font-size: 25px;
+        padding: 25px 40px;
+    }
+    .button-man {
+        margin-top: 60px;
+    }
+    .left {
+        margin-left: 45px;
+        margin-top: 140px;
+    }
+    .bg-of-money {
+        width: 80%;
+    }
+    .hand {
+        width: 280px;
+        position: absolute;
+        right: -150px;
+        
+    }
+    .hand-bg {
+        width: 560px;
+    }
+    .hand-bg {
+        position:absolute;
+        right: -330px;
+    }
+}
+
+@media (max-width:780px) { 
+    .subt {
+        font-size: 18px;
+    }
+    .title {
+        font-size: 48px;
+    }
+    .button-man  {
+        transform: scale(0.7); /* Примерный масштаб, вы можете установить нужное значение */
+        transform-origin: top
+         left; 
+    }
+   .left {
+    width: fit-content;
+   }
+   .right {
+    margin-top: 150px;
+   }
+   .hand {
+    position: absolute;
+    right: -180px;
+   }
+   .bg-of-money {
+    margin-top: -50px;
+    width: 80%;
+   }
+}
+@media (max-width:550px) {
+    .left {
+        transform: scale(0.8); /* Примерный масштаб, вы можете установить нужное значение */
+        transform-origin: top
+         left; 
+         margin-left: 30px;
+    }
+    .bg-of-money {
+        width: 120%;
+        margin-top: -80px;
+    }
+    .right {
+        transform: scale(0.7); /* Примерный масштаб, вы можете установить нужное значение */
+        transform-origin: bottom
+         left; 
+         position: absolute;
+         right: 30px;
+         margin-top: 230px;
+    }
+} 
+
+@media (max-width:374px) {
+    .right {
+        transform: scale(0.6); /* Примерный масштаб, вы можете установить нужное значение */
+        transform-origin: bottom
+         left; 
+         position: absolute;
+         right: 30px;
+         margin-top: 230px;
+    }
+    .left {
+        transform: scale(0.6); /* Примерный масштаб, вы можете установить нужное значение */
+        transform-origin: top
+         left; 
+         margin-left: 30px;
+    }
+}

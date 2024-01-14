@@ -37,7 +37,7 @@ export default function Cards() {
                     </div>
                     <div className="title0">
                     Save money and
-                    <br></br>
+                   
                     get rich
                     </div>
                     <div className="subt0">
