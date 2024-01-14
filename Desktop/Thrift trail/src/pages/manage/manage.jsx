@@ -9,7 +9,7 @@ export function Manage() {
   function getCurrentDate() {
     const currentDate = new Date();
     const formattedDate = `${currentDate.getDate()}.${currentDate.getMonth() + 1}.${currentDate.getFullYear()}`;
-    return formattedDate;
+    return formattedDate; 
   }
 
   function createInputRow() {
