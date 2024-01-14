@@ -15,7 +15,7 @@ Shape Your Wealth Path
 Craft Your <span>Success</span>
 </div>
 </div>
-<NavLink to= 'manage'>
+<NavLink to= 'manage' >
 <div className="button-man">
     <button className='button-manage'>Manage money</button>
 </div>

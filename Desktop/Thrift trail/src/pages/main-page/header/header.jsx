@@ -1,6 +1,7 @@
 import React from 'react'
 import './header.css'
 import { NavLink } from 'react-router-dom';
+import { Autoriz } from '../autoriz/autoriz.jsx'
 
 export default function Header() {
   const scrollToTop = () => {
@@ -69,29 +70,8 @@ export default function Header() {
             <button  className="header-button" onClick={() => scrollToElement(document.getElementById('comments'), 1000)}>
               Comments
             </button>
+            <Autoriz/>
             
-            <div className="custom-tooltip">
-              <img src="../src/assets/photo/image 8person.svg" alt="Mini Photo" className="mini-photo" id="person" />
-              {/* {user ? (
-                <div className="tooltiptext">
-                  <div className="sign-up">
-                    log out
-                  </div>
-                </div>
-              ) : ( */}
-                <div className="tooltiptext">
-                 <NavLink to='registration'>
-                  <button className="sign-up">
-                    sign up
-                  </button>
-                  </NavLink>
-                  <NavLink to='login'>
-                  <button className="log-in">
-                    log in
-                  </button>
-                  </NavLink>
-                </div>
-          </div>
           </div>
           </div>
           </div>
