@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom'
 export function SignUp() {
   return (
     <>
-<div className="login" >
+<div className="login" > 
     <div className="login123">
     <a href='/'>
       <div className="logo-log">
@@ -20,10 +20,10 @@ export function SignUp() {
 SIGN UP
 </div>
 <div className="input-login">
-   <input  type="text" name="name" placeholder="your name"></input>
-   <input  type="email" name="email" placeholder="enter your e-mail"></input>
-   <input  type="password" name="user-password" placeholder="create password"></input>
-   <input  type="password" name="config" placeholder="confirm password"></input>
+   <input  type="text" name="name" placeholder="your name" className='input-sign'></input>
+   <input  type="email" name="email" placeholder="enter your e-mail" className='input-sign'></input>
+   <input  type="password" name="user-password" placeholder="create password" className='input-sign'></input>
+   <input  type="password" name="config" placeholder="confirm password" className='input-sign'></input>
 </div>
 <div className="button-login1">
   Sign Up

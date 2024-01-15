@@ -151,3 +151,108 @@ input:focus {
         transform: translateX(0%);
     }
 }
+
+@media (max-width:1050px) {
+    .hand-login {
+        display: none;
+    }
+    .money-login {
+        width: 118%;
+    }
+    .login-all {
+        display:flex;
+        justify-content: center;
+    }
+    .login-box1 {
+        margin-left: 0;
+    }
+    .login123 {
+        margin-bottom: 80px;
+    }
+   
+    
+}
+@media (max-width:800px) {
+ .money-login {
+        width: 109%;
+    }
+    .logo-log {
+        transform: scale(0.8); /* Примерный масштаб, вы можете установить нужное значение */
+    transform-origin: top
+     left;
+    }
+}
+@media (max-width:600px) {
+.login-box1 {
+    transform: scale(0.8); /* Примерный масштаб, вы можете установить нужное значение */
+    transform-origin: top
+     center; 
+}
+}@media (max-width:450px) {
+    .login-box1 {
+        transform: scale(0.7); /* Примерный масштаб, вы можете установить нужное значение */
+        transform-origin: top
+         center; 
+         height: auto;
+        
+    }
+    
+    .input-sign {
+        width: 360px;
+    }
+    .logo-log {
+        transform: scale(0.6); /* Примерный масштаб, вы можете установить нужное значение */
+    transform-origin: top
+     left;}
+    .button-login1 {
+        padding: 12px 40px ;
+    }
+    .title-login1 {
+        font-size: 47px;
+        margin-top: 20px;
+    }
+    .dont-have-acc {
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    
+}
+
+@media (max-width:400px) { 
+    .input-sign {
+        transform: scale(0.9); /* Примерный масштаб, вы можете установить нужное значение */
+        transform-origin: top
+         center; 
+         height: auto;
+         height: 48px;
+    }
+    .button-login1 {
+        transform: scale(0.8); /* Примерный масштаб, вы можете установить нужное значение */
+        transform-origin: top
+         center; 
+    }
+    .dont-have-acc {
+        transform: scale(0.8); /* Примерный масштаб, вы можете установить нужное значение */
+        transform-origin: top
+         center; 
+    }
+    .money-login {
+        width: 129%;
+    }
+
+}
+@media (max-width:380px) { 
+    .login-box1 {
+        transform: scale(0.6); /* Примерный масштаб, вы можете установить нужное значение */
+        transform-origin: top
+         center; 
+         height: auto;
+    }
+    .login123 {
+        margin-bottom: 0;
+        height: 570px;
+    }
+    .login  {
+        height: 570px;
+    }
+}
