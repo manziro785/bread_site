@@ -4,12 +4,239 @@ import { NavLink } from 'react-router-dom';
 import { Autoriz } from '../main-page/autoriz/autoriz.jsx';
 
 export function Manage() {
+  // function getCurrentDate() {
+  //   const currentDate = new Date();
+  //   const formattedDate = `${currentDate.getDate()}.${currentDate.getMonth() + 1}.${currentDate.getFullYear()}`;
+  //   return formattedDate;
+  // }
+
+  // function createInputRow() {
+  //   return Array.from({ length: 3 }, (_, index) => ({
+  //     id: index,
+  //     type: index === 0 ? 'time' : index === 1 ? 'text' : 'number',
+  //     placeholder: ` ${index === 0 ? 'время' : index === 1 ? 'any notes' : 'income'}`,
+  //     value: '',
+  //     className: `input-${index === 0 ? 'time' : index === 1 ? 'text' : 'number'}`,
+  //     isDeleted: false,
+  //   }));
+  // }
+
+  // function createExpenseInputRow() {
+  //   return Array.from({ length: 3 }, (_, index) => ({
+  //     id: index,
+  //     type: index === 0 ? 'time' : index === 1 ? 'selector' : 'number',
+  //     placeholder: ` ${index === 0 ? 'время' : index === 1 ? 'категория' : 'expense'}`,
+  //     value: '',
+  //     className: `input-${index === 0 ? 'time1' : index === 1 ? 'selector1' : 'number1'}`,
+  //     isDeleted: false,
+  //   }));
+  // }
+
+  // const [inputRows, setInputRows] = useState([createInputRow()]);
+  // // const [incomeRows, setIncomeRows] = useState([createInputRow()]);
+  // // const [expenseRows, setExpenseRows] = useState([createExpenseInputRow()]);
+  // const [timeValue, setTimeValue] = useState(getCurrentDate());
+  // const [areInputsVisible, setInputsVisible] = useState(false);
+  // const [areExpenseInputsVisible, setExpenseInputsVisible] = useState(false);
+  // const [selectedCurrency, setSelectedCurrency] = useState('KGS');
+  // const [savedRows, setSavedRows] = useState([]);
+  // const [savedIncomeRows, setSavedIncomeRows] = useState([]);
+  // const [savedExpenseRows, setSavedExpenseRows] = useState([]);
+  // const [rowStatus, setRowStatus] = useState('editable');
+  // const [deletedRows, setDeletedRows] = useState([]);
+
+  // const savedData = JSON.parse(localStorage.getItem('savedData')) || { savedIncomeRows: [], savedExpenseRows: [] };
+  // const [incomeRows, setIncomeRows] = useState(savedData.savedIncomeRows || [createInputRow()]);
+  // const [expenseRows, setExpenseRows] = useState(savedData.savedExpenseRows || [createExpenseInputRow()]);
+
+
+
+  // const handleInputChange = (e, rowIndex, colIndex, isIncome) => {
+  //   if (isIncome) {
+  //     setIncomeRows((prevRows) =>
+  //       prevRows.map((row, i) =>
+  //         i === rowIndex
+  //           ? row.map((col, j) => {
+  //               if (j === colIndex) {
+  //                 let value = e.target.value;
+
+  //                 if (col.type === 'number') {
+  //                   value = value === '' ? '' : `${value}`;
+  //                 }
+
+  //                 return { ...col, value: value };
+  //               } else {
+  //                 return col;
+  //               }
+  //             })
+  //           : row
+  //       )
+  //     );
+  //   } else {
+  //     setExpenseRows((prevRows) =>
+  //       prevRows.map((row, i) =>
+  //         i === rowIndex
+  //           ? row.map((col, j) => {
+  //               if (j === colIndex) {
+  //                 let value = e.target.value;
+
+  //                 if (col.type === 'number') {
+  //                   value = value === '' ? '' : `${value}`;
+  //                 }
+
+  //                 return { ...col, value: value };
+  //               } else {
+  //                 return col;
+  //               }
+  //             })
+  //           : row
+  //       )
+  //     );
+  //   }
+  // };
+
+  // // const handleMarkForDeletion = (rowIndex, isIncome) => {
+  // //   if (isIncome) {
+  // //     setIncomeRows((prevRows) =>
+  // //       prevRows.map((row, i) =>
+  // //         i === rowIndex
+  // //           ? row.map((col) => ({ ...col, isDeleted: !col.isSaved && !col.isDeleted }))
+  // //           : row
+  // //       )
+  // //     );
+  // //   } else {
+  // //     setExpenseRows((prevRows) =>
+  // //       prevRows.map((row, i) =>
+  // //         i === rowIndex
+  // //           ? row.map((col) => ({ ...col, isDeleted: !col.isSaved && !col.isDeleted }))
+  // //           : row
+  // //       )
+  // //     );
+  // //   }
+  // // };
+
+  // const handleSaveRow = (rowIndex, isIncome) => {
+  //   if (isIncome) {
+  //     setIncomeRows((prevRows) =>
+  //       prevRows.map((row, i) =>
+  //         i === rowIndex
+  //           ? row.map((col) => ({ ...col, isSaved: true }))
+  //           : row
+  //       )
+  //     );
+  //     setSavedIncomeRows((prevSavedRows) => [
+  //       ...prevSavedRows,
+  //       incomeRows[rowIndex].map((col) => ({ ...col })),
+  //     ]);
+  //   } else {
+  //     setExpenseRows((prevRows) =>
+  //       prevRows.map((row, i) =>
+  //         i === rowIndex
+  //           ? row.map((col) => ({ ...col, isSaved: true }))
+  //           : row
+  //       )
+  //     );
+
+  //     setSavedExpenseRows((prevSavedRows) => [
+  //       ...prevSavedRows,
+  //       expenseRows[rowIndex].map((col) => ({ ...col })),
+  //     ]);
+  //   }
+  // };
+
+  // const canAddInput = inputRows.every((row) => row[2].value !== '');
+
+  // // const addInput = () => {
+  // //   if (canAddInput) {
+  // //     setInputRows((prevRows) => [...prevRows, createInputRow()]);
+  // //     setInputsVisible(true);
+  // //   } else {
+  // //     alert('Fill in all fields of the current line before adding a new one.');
+  // //   }
+  // // };
+
+  // const calculateTotal = (savedIncomeRows, savedExpenseRows) => {
+  //   const totalIncome = savedIncomeRows.reduce((acc, row) => {
+  //     const value = parseFloat(row[2].value) || 0;
+  //     return acc + value;
+  //   }, 0);
+  
+  //   const totalExpense = savedExpenseRows.reduce((acc, row) => {
+  //     const value = parseFloat(row[2].value) || 0;
+  //     return acc + value;
+  //   }, 0);
+  
+  //   const totalBalance = totalIncome - totalExpense;
+  
+  //   return {
+  //     totalIncome: totalIncome.toFixed(1),
+  //     totalExpense: totalExpense.toFixed(1),
+  //     totalBalance: totalBalance.toFixed(1),
+  //   };
+  // };
+  // const formatNumberWithCommas = (number) => {
+  //   return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, "'");
+  // };
+
+  // const handleCurrencyChange = (e) => {
+  //   setSelectedCurrency(e.target.value);
+  // };
+
+  // const handleAddExpense = () => {
+  //   if (expenseRows.every(row => row[2].value !== '' && row[1].value !== '')) {
+  //     setExpenseRows((prevRows) => [...prevRows, createExpenseInputRow()]);
+  //     setExpenseInputsVisible(true);
+  //   } else {
+  //     alert('Fill in all fields of the current line before adding a new one.');
+  //   }
+  // };
+  
+  // const handleAddIncome = () => {
+  //   setIncomeRows((prevRows) => [...prevRows, createInputRow()]);
+  //   setInputsVisible(true);
+  // };
+
+
+  // // const handleToggleCross = (rowIndex, isIncome) => {
+  // //   if (isIncome) {
+  // //     setIncomeRows((prevRows) =>
+  // //       prevRows.map((row, i) =>
+  // //         i === rowIndex
+  // //           ? row.map((col) => ({ ...col, isDeleted: !col.isDeleted }))
+  // //           : row
+  // //       )
+  // //     );
+  // //   } else {
+  // //     setExpenseRows((prevRows) =>
+  // //       prevRows.map((row, i) =>
+  // //         i === rowIndex
+  // //           ? row.map((col) => ({ ...col, isDeleted: !col.isDeleted }))
+  // //           : row
+  // //       )
+  // //     );
+  // //   }
+  // // };
+
+  // const handleDeleteIncomeRow = (rowIndex) => {
+  //   setIncomeRows((prevRows) => {
+  //     const updatedRows = [...prevRows];
+  //     updatedRows.splice(rowIndex, 1); // Удаление строки
+  //     return updatedRows;
+  //   });
+  // };
+  // const handleDeleteExpenseRow = (rowIndex) => {
+  //   setExpenseRows((prevRows) => {
+  //     const updatedRows = [...prevRows];
+  //     updatedRows.splice(rowIndex, 1); // Удаление строки
+  //     return updatedRows;
+  //   });
+  // };  
   function getCurrentDate() {
     const currentDate = new Date();
     const formattedDate = `${currentDate.getDate()}.${currentDate.getMonth() + 1}.${currentDate.getFullYear()}`;
     return formattedDate;
   }
-
+  
   function createInputRow() {
     return Array.from({ length: 3 }, (_, index) => ({
       id: index,
@@ -20,7 +247,7 @@ export function Manage() {
       isDeleted: false,
     }));
   }
-
+  
   function createExpenseInputRow() {
     return Array.from({ length: 3 }, (_, index) => ({
       id: index,
@@ -31,21 +258,22 @@ export function Manage() {
       isDeleted: false,
     }));
   }
-
+  
+  const savedData = JSON.parse(localStorage.getItem('savedData')) || { savedIncomeRows: [], savedExpenseRows: [] };
+  
   const [inputRows, setInputRows] = useState([createInputRow()]);
-  const [incomeRows, setIncomeRows] = useState([createInputRow()]);
-  const [expenseRows, setExpenseRows] = useState([createExpenseInputRow()]);
   const [timeValue, setTimeValue] = useState(getCurrentDate());
   const [areInputsVisible, setInputsVisible] = useState(false);
   const [areExpenseInputsVisible, setExpenseInputsVisible] = useState(false);
   const [selectedCurrency, setSelectedCurrency] = useState('KGS');
   const [savedRows, setSavedRows] = useState([]);
-  const [savedIncomeRows, setSavedIncomeRows] = useState([]);
-  const [savedExpenseRows, setSavedExpenseRows] = useState([]);
+  const [savedIncomeRows, setSavedIncomeRows] = useState(savedData.savedIncomeRows || []);
+  const [savedExpenseRows, setSavedExpenseRows] = useState(savedData.savedExpenseRows || []);
   const [rowStatus, setRowStatus] = useState('editable');
   const [deletedRows, setDeletedRows] = useState([]);
-
-
+  const [incomeRows, setIncomeRows] = useState(savedData.savedIncomeRows || [createInputRow()]);
+  const [expenseRows, setExpenseRows] = useState(savedData.savedExpenseRows || [createExpenseInputRow()]);
+  
   const handleInputChange = (e, rowIndex, colIndex, isIncome) => {
     if (isIncome) {
       setIncomeRows((prevRows) =>
@@ -90,26 +318,7 @@ export function Manage() {
     }
   };
 
-  const handleMarkForDeletion = (rowIndex, isIncome) => {
-    if (isIncome) {
-      setIncomeRows((prevRows) =>
-        prevRows.map((row, i) =>
-          i === rowIndex
-            ? row.map((col) => ({ ...col, isDeleted: !col.isSaved && !col.isDeleted }))
-            : row
-        )
-      );
-    } else {
-      setExpenseRows((prevRows) =>
-        prevRows.map((row, i) =>
-          i === rowIndex
-            ? row.map((col) => ({ ...col, isDeleted: !col.isSaved && !col.isDeleted }))
-            : row
-        )
-      );
-    }
-  };
-
+  
   const handleSaveRow = (rowIndex, isIncome) => {
     if (isIncome) {
       setIncomeRows((prevRows) =>
@@ -131,25 +340,46 @@ export function Manage() {
             : row
         )
       );
-
+  
       setSavedExpenseRows((prevSavedRows) => [
         ...prevSavedRows,
         expenseRows[rowIndex].map((col) => ({ ...col })),
       ]);
     }
+    saveDataToLocalStorage();
   };
-
-  const canAddInput = inputRows.every((row) => row[2].value !== '');
-
-  const addInput = () => {
-    if (canAddInput) {
-      setInputRows((prevRows) => [...prevRows, createInputRow()]);
-      setInputsVisible(true);
-    } else {
-      alert('Fill in all fields of the current line before adding a new one.');
-    }
+  
+  const handleDeleteIncomeRow = (rowIndex) => {
+    setIncomeRows((prevRows) => {
+      const updatedRows = [...prevRows];
+      updatedRows.splice(rowIndex, 1); // Удаление строки
+      saveDataToLocalStorage();
+      return updatedRows;
+    });
   };
-
+  const handleDeleteExpenseRow = (rowIndex) => {
+    setExpenseRows((prevRows) => {
+      const updatedRows = [...prevRows];
+      updatedRows.splice(rowIndex, 1); // Удаление строки
+      saveDataToLocalStorage();
+      return updatedRows;
+    });
+  };
+  
+  const saveDataToLocalStorage = () => {
+    const dataToSave = {
+      savedIncomeRows: incomeRows,
+      savedExpenseRows: expenseRows,
+    };
+    localStorage.setItem('savedData', JSON.stringify(dataToSave));
+  };
+  const formatNumberWithCommas = (number) => {
+    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, "'");
+  };
+  const handleCurrencyChange = (e) => {
+    setSelectedCurrency(e.target.value);
+  };
+  
   const calculateTotal = (savedIncomeRows, savedExpenseRows) => {
     const totalIncome = savedIncomeRows.reduce((acc, row) => {
       const value = parseFloat(row[2].value) || 0;
@@ -164,69 +394,41 @@ export function Manage() {
     const totalBalance = totalIncome - totalExpense;
   
     return {
-      totalIncome: totalIncome.toFixed(1),
-      totalExpense: totalExpense.toFixed(1),
-      totalBalance: totalBalance.toFixed(1),
+      totalIncome: formatNumberWithCommas(totalIncome.toFixed(1)),
+      totalExpense: formatNumberWithCommas(totalExpense.toFixed(1)),
+      totalBalance: formatNumberWithCommas(totalBalance.toFixed(1)),
     };
   };
-  const formatNumberWithCommas = (number) => {
-    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, "'");
-  };
-
-  const handleCurrencyChange = (e) => {
-    setSelectedCurrency(e.target.value);
-  };
-
-  const handleAddExpense = () => {
-    if (expenseRows.every(row => row[2].value !== '' && row[1].value !== '')) {
-      setExpenseRows((prevRows) => [...prevRows, createExpenseInputRow()]);
-      setExpenseInputsVisible(true);
-    } else {
-      alert('Fill in all fields of the current line before adding a new one.');
-    }
-  };
-  
   const handleAddIncome = () => {
     setIncomeRows((prevRows) => [...prevRows, createInputRow()]);
     setInputsVisible(true);
   };
+  const handleAddExpense = () => {
+    // if (expenseRows.every(row => row[2].value !== '' && row[1].value !== '')) {
+    //   setExpenseRows((prevRows) => [...prevRows, createExpenseInputRow()]);
+    //   setExpenseInputsVisible(true);
+    // } else {
+    //   alert('Fill in all fields of the current line before adding a new one.');
+    // }
+    setExpenseRows((prevRows) => [...prevRows, createExpenseInputRow()]);
+    setExpenseInputsVisible(true);
+  };
+  const calculateExpensesByCategory = (savedExpenseRows) => {
+  const expensesByCategory = {};
 
+  savedExpenseRows.forEach((row) => {
+    const category = row[1].value; // предположим, что категория находится во второй колонке
+    const amount = parseFloat(row[2].value) || 0;
 
-  const handleToggleCross = (rowIndex, isIncome) => {
-    if (isIncome) {
-      setIncomeRows((prevRows) =>
-        prevRows.map((row, i) =>
-          i === rowIndex
-            ? row.map((col) => ({ ...col, isDeleted: !col.isDeleted }))
-            : row
-        )
-      );
+    if (expensesByCategory[category]) {
+      expensesByCategory[category] += amount;
     } else {
-      setExpenseRows((prevRows) =>
-        prevRows.map((row, i) =>
-          i === rowIndex
-            ? row.map((col) => ({ ...col, isDeleted: !col.isDeleted }))
-            : row
-        )
-      );
+      expensesByCategory[category] = amount;
     }
-  };
+  });
 
-  const handleDeleteIncomeRow = (rowIndex) => {
-    setIncomeRows((prevRows) => {
-      const updatedRows = [...prevRows];
-      updatedRows.splice(rowIndex, 1); // Удаление строки
-      return updatedRows;
-    });
-  };
-  const handleDeleteExpenseRow = (rowIndex) => {
-    setExpenseRows((prevRows) => {
-      const updatedRows = [...prevRows];
-      updatedRows.splice(rowIndex, 1); // Удаление строки
-      return updatedRows;
-    });
-  };  
-  
+  return expensesByCategory;
+};
   return (
     <>
       <div className="header-manage">
