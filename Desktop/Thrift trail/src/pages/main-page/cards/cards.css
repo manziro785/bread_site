@@ -26,6 +26,9 @@ margin: 51px 0px;
     font-weight: bold;
     background:none;
 }
+.card3 .title0 {
+  width: 90%;
+}
 .subt0 span {
     color:#045C24;
     background:none;

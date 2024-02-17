@@ -1,0 +1,23 @@
+.photo-nop {
+    filter: brightness(0.7);
+    background:none;
+    width: 190px;
+}
+.num-one, .num-two {
+    font-size: 220px;
+    color: rgb(3, 80, 3);
+    height: fit-content;
+}
+.nop {
+    display: flex;
+    flex-direction: row;
+}
+.num-one {
+    margin-right: 15px;
+}
+.no-page {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 600px;
+}

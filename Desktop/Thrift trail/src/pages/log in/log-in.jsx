@@ -19,8 +19,8 @@ export  function LogIn() {
 LOG IN
 </div>
 <div className="input-login">
-   <input  type="text" name="username" placeholder="enter your e-mail"></input>
-   <input  type="password" name="user-password" placeholder="enter your password"></input>
+   <input  type="text" name="username" placeholder="enter your e-mail" className='input-login0'></input>
+   <input  type="password" name="user-password" placeholder="enter your password"  className='input-login0'></input>
 </div>
 <div className="button-login">
   log in

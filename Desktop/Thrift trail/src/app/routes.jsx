@@ -4,6 +4,7 @@ import { MainPage } from '../pages/main-page/main-page.jsx';
 import { LogIn } from '../pages/log in/log-in.jsx';
 import { Check } from '/src/pages/check/check.jsx';
 import { Manage } from '../pages/manage/manage.jsx';
+import { NoPage } from '../pages/Nopage/nopage.jsx';
 
 
 export const router = createBrowserRouter([
@@ -24,13 +25,14 @@ export const router = createBrowserRouter([
     path: '/manage',
     element: <Manage />
   },
-//   {
-//     path: '/*',
-//     element: <NoPage />
-//   },
-  
+
   {
     path: '/check',
     element: <Check />
-  }
+  },
+    {
+    path: '/*',
+    element: <NoPage />
+  },
+  
 ])
