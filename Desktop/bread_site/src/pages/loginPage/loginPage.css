@@ -1,0 +1,94 @@
+.box-login {
+    width: 532px;
+    height: 572px;
+    background-color: #E4BC8D;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 50px ;
+    position: relative;
+    margin-left: 170px;
+    margin-top: -20px;
+
+}
+.title-box {
+    font-family: "Mr De Haviland";
+font-size: 96px;
+display: flex;
+justify-content: center;
+padding-top: 20px;
+box-sizing: content-box;
+
+}
+.form-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.input-name, .input-password {
+    background-color: #B8976E;
+    width: 400px;
+    height: 60px;
+    font-size: 28px;
+    font-family: "Montserrat", sans-serif;
+    color: #805b27;
+    border-radius:14px;
+    font-weight: 300;
+    padding-left: 30px;
+    outline: none;
+    border: 3px solid #7c181800;
+    margin-bottom: 28px;
+
+}
+.input-name::placeholder, .input-password::placeholder {
+    color:#523c21c3
+}
+.input-name:focus, .input-password:focus {
+    border: 3px solid #a0631e9e;
+}
+.btn-login {
+    width: 190px;
+    height: 60px;
+    font-size: 32px;
+    background-color: #8E6C44;
+    border-radius:50px;
+    color:#43321D;
+    padding: 11px 50px;
+    font-weight: bold;
+    border: none;
+    margin-right: 240px;
+    margin-top: 40px;
+    transition: all 0.5s ease;
+}
+.btn-login:hover {
+    background-color: #7b5d40;
+
+}
+.enjoy {
+    font-family: "Montserrat", sans-serif;
+font-size: 23px;
+color: #523C21;
+font-weight: 400;
+margin-left: 270px;
+margin-top: -30px;
+}
+.dont-have {
+    display: flex;
+    justify-content: center;
+    margin-top: 55px;
+}
+.subt-dont {
+    font-size: 27px;
+    font-weight: 200;
+    color: #543F26;
+    font-family: "Montserrat", sans-serif;
+
+}
+.btn-link-sign {
+    font-size: 28px;
+    color: #22190E;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+text-decoration: none;
+margin-left: 5px;
+}

@@ -1,0 +1,33 @@
+.zagol-banner {
+    z-index: 9;
+    position: relative;
+    color: #ffff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.banner-title {
+    font-size: 62px;
+    text-align: center;
+    margin-top: 40px;
+}
+.banner-subt {
+    font-size: 22px;
+    text-align: center;
+margin-top:35px;
+}
+.btn-delivery {
+    margin-top: 80px;
+    transition: all 0.3s ease;
+    /* width: fit-content; */
+
+}
+
+.img-btn {
+    width: 500px;
+
+}
+
+

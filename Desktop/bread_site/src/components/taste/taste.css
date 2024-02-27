@@ -1,0 +1,57 @@
+.title-taste {
+    display: flex;
+    font-size: 38px;
+    color: #000000f4;
+    /* margin-left: 25px; */
+    width: 800px;
+    margin-bottom: 34px;
+
+    
+}
+/* .signature {
+    margin-top: -30px;
+    margin-left: 10px;
+} */
+.taste-box {
+    display: flex;
+    margin-top: 20px;
+}
+.text-taste {
+    color: #9A784E;
+    font-size: 30px;
+    width: 460px;
+    /* margin-left: 25px; */
+}
+.text-taste2 {
+    margin-top: 25px;
+}
+.taste-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 350px;
+}
+.img-taste {
+    margin-left: 70px;
+    margin-top: 15px;
+}
+.rolling-pin {
+    position: absolute;
+    left: -2000px;
+    margin-top: 200px;
+    transition: left 0.6s ease-in-out; /* Плавное изменение свойства left */
+
+}
+  
+.rolling-pin.show {
+    left: -1000px; /* Положение при достижении определенного места */
+  }
+
+
+.dostoinstva {
+    display: flex;
+    justify-content: center;
+  margin-top: 600px;
+}
+.dost {
+    width: 1200px;
+}

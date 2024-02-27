@@ -1,0 +1,30 @@
+.photo-container1 {
+    position: absolute;
+    left: -800px; /* Начальное положение вне видимой области */
+    margin-top: 70px;
+    transition: left 0.5s ease-in-out; /* Плавное изменение свойства left */
+  }
+  
+  .photo-container1.show {
+    left: -400px; /* Положение при достижении определенного места */
+  }
+
+.photo-container2 {
+    position: absolute;
+    right: -590px;
+    margin-top: 460px;
+    transition: right 0.5s ease-in-out; /* Плавное изменение свойства left */
+
+}
+.photo-container2.show {
+    right: -190px;  }
+.title-moves {
+    /* text-align: center; */
+    font-size: 75px;
+    color: #000
+}
+.title-moving {
+    text-align: center;
+    margin-top: 300px;
+
+}

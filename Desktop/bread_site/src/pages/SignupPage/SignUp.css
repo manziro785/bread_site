@@ -1,0 +1,73 @@
+.title-box2 {
+    font-family: "Mr De Haviland";
+font-size: 96px;
+display: flex;
+justify-content: center;
+padding-top: 10px;
+box-sizing: content-box;
+
+}
+
+.btn-login2 {
+    width: 200px;
+    height: 60px;
+    font-size: 32px;
+    background-color: #8E6C44;
+    border-radius:50px;
+    color:#43321D;
+    padding: 11px 20px;
+    font-weight: bold;
+    border: none;
+    margin-right: 240px;
+    margin-top: 20px;
+    transition: all 0.5s ease;
+}
+.btn-login2:hover {
+    background-color: #7b5d40;
+}
+
+.box-login2 {
+    width: 532px;
+    height: 602px;
+    background-color: #E4BC8D;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 50px ;
+    position: relative;
+    margin-left: 170px;
+    margin-top: -40px;
+
+}
+
+.dont-have3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 29px;
+}
+.input-name2, .input-password2 {
+    background-color: #B8976E;
+    width: 400px;
+    height: 60px;
+    font-size: 28px;
+    font-family: "Montserrat", sans-serif;
+    color: #805b27;
+    border-radius:14px;
+    font-weight: 300;
+    padding-left: 30px;
+    outline: none;
+    border: 3px solid #7c181800;
+    margin-bottom: 8px;
+
+}
+.input-name2::placeholder, .input-password2::placeholder {
+    color:#523c21c3
+}
+.input-name2:focus, .input-password2:focus {
+    border: 3px solid #a0631e9e;
+}
+.form-login2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+}

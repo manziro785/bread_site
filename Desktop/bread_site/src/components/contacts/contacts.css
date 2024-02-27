@@ -1,0 +1,22 @@
+.title-cont {
+    font-size: 62px;
+    margin-top: -10px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.addres, .addres-street, .inst, .numb {
+    font-size: 35px;
+    text-align: center;
+
+    margin: 30px 0px;
+}
+.contacts-box  {
+    width: fit-content;
+    margin-left: 200px;
+}
+.contacts-container {
+    display: flex;
+}
+.psheno {
+    margin-top: -300px;
+}
